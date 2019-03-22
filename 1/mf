@@ -1,0 +1,12 @@
+CC = gcc
+CFLAGS = -W -Wall
+TARGET = exe
+OBJECTS = main.o foo.o bar.o
+
+all : $(TARGET)
+
+$(TARGET) : $(OBJECTS)
+	$(CC) $(CFLAGS) -o $@ $^
+
+clean:
+	rm *.o exe
