@@ -1,3 +1,12 @@
+//전에 구현했던 ls 함수를 이용해 출력시 getuid와 ctime함수를 이용해 
+//각 파일들의 소유자와 마지막 갱신시간을 표시해보자
+//hint)
+//마지막 갱신시간의 경우 stat 구조체와 lstat 함수를 사용
+//stat 구조체 선언 후 lstat(const char *filename, struct stat *buf) 함수를 이용해
+//stat 구조체에 데이터를 채워넣는다
+//stat 구조체에 존재하는 변수인st_mtime을 ctime으로 호출시 갱신시간 확인가능
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
